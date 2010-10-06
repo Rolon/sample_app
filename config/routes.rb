@@ -38,7 +38,9 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => 'pages', :action => 'home'
 
   # See how all your routes lay out with "rake routes"
+  map.help    '/help',    :controller => 'pages', :action => 'help'
 
+  map.signup '/signup',   :controller => 'users', :action => 'new'
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
